@@ -1,0 +1,13 @@
+<p>
+  {{ specificProductDeetsForThisRoute.name }}
+  <br />
+  {{ specificProductDeetsForThisRoute.description }}
+  <br />
+  <button (click)="chuckInCart(specificProductDeetsForThisRoute)">
+    BUY THIS STUFF
+  </button>
+</p>
+
+<p>
+  <a routerLink="/shipping">Shipping Prices</a>
+</p>

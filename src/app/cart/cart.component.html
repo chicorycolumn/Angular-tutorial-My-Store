@@ -1,0 +1,23 @@
+<h2>Your items here</h2>
+<p>You have {{ cartItems.length }} items in your basket.</p>
+<div *ngFor="let p of cartItems">
+  <p>{{ p.name }}</p>
+</div>
+
+<form [formGroup]="myLovelyForm" (ngSubmit)="onSubmit(myLovelyForm.value)">
+  <div>
+    <label for="nameroonie">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="nameroonie" />
+  </div>
+
+  <div>
+    <label for="addressypoos">
+      Address
+    </label>
+    <input id="address" type="text" formControlName="addressypoos" />
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+</form>
